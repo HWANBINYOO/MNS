@@ -1,13 +1,12 @@
-import Chart from 'src/components/home';
-import { BillboardItem } from 'src/types/songs';
+import Chart from 'src/components/organisms/home';
+import { BillboardItem, BillboardItemList } from 'src/types/songs';
 
 export default async function Home() {
-  const charts: BillboardItem[] = await fetchChartData();
+  const charts: BillboardItemList = await fetchChartData();
   console.log(charts);
   return (
     <>
-      {/* {charts} */}
-      <Chart />
+      <Chart charts={charts} />
     </>
   );
 }
