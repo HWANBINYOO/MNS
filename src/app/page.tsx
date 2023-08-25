@@ -3,7 +3,6 @@ import { BillboardItem, BillboardItemList } from 'src/types/songs';
 
 export default async function Home() {
   const charts: BillboardItemList = await fetchChartData();
-  console.log(charts);
   return (
     <>
       <Chart charts={charts} />

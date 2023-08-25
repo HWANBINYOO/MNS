@@ -2,16 +2,18 @@ import styled from '@emotion/styled';
 
 export const Header = styled.div`
   width: 100vw;
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: gray;
+  background-color: #1e2022;
+  color: white;
   padding: 0 20px;
 `;
 
 export const MainLogo = styled.div`
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: bold;
 `;
 
 export const SearchBar = styled.div`
@@ -19,8 +21,15 @@ export const SearchBar = styled.div`
   align-content: center;
 `;
 
-export const BillboardNavigations = styled.div`
+export const BillboardNavigation = styled.nav`
   display: flex;
   align-content: center;
-  justify-content: space-around;
+  gap: 10px;
+  a::before {
+    content: '|';
+    color: #52616b;
+    padding-right: 10px;
+  }
 `;
+
+export const BillboardNavLi = styled.a``;

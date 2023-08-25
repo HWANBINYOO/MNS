@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const ChartList = styled.div`
+export const ChartHeader = styled.div`
   width: 90vw;
   display: flex;
   flex-direction: column;
