@@ -1,3 +1,4 @@
+import { Header } from 'src/components/molecules/header/styled';
 import Chart from 'src/components/organisms/home';
 import { BillboardItem, BillboardItemList } from 'src/types/songs';
 

@@ -20,8 +20,8 @@ export default function ChartItem({
         <img
           alt="1"
           loading="lazy"
-          width="150"
-          height="150"
+          width="130"
+          height="130"
           decoding="async"
           data-nimg="1"
           src={image}

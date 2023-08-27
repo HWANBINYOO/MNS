@@ -3,12 +3,14 @@ import * as S from './styled';
 import { BillboardItemList } from 'src/types/songs';
 import ChartItem from 'src/components/molecules/ChartItem';
 import ChartHeader from 'src/components/molecules/ChartHeader';
+import Header from 'src/components/molecules/header';
 
 export default function Chart({ charts }: { charts: BillboardItemList }) {
   return (
     <>
-      <ChartHeader />
+      <Header />
       <S.ChartList>
+        <ChartHeader />
         {charts.data.map((i, idx) => (
           <ChartItem
             key={idx}

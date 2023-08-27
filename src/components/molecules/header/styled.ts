@@ -32,4 +32,11 @@ export const BillboardNavigation = styled.nav`
   }
 `;
 
-export const BillboardNavLi = styled.a``;
+export const BillboardNavLi = styled.a`
+  color: white;
+  text-decoration: none;
+  :hover {
+    transition: 0.2s ease-in;
+    color: #52616b;
+  }
+`;
