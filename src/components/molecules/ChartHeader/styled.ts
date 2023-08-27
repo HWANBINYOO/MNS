@@ -8,13 +8,13 @@ export const ChartHeader = styled.div`
 `;
 
 export const ChartCategory = styled.div`
-  width: 25%;
+  width: 30%;
   font-size: 30px;
   font-weight: bold;
 `;
 
 export const ChartHeaderDate = styled.div`
-  width: calc(35% + 150px);
+  width: calc(25% + 130px);
   display: flex;
   align-items: center;
   justify-content: flex-start;

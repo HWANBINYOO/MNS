@@ -5,14 +5,13 @@ export const ChartItem = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  border-top: 0.1px solid #1e2022;
-  border-right: 0.1px solid #1e2022;
+  background-color: white;
 `;
 
 export const ChartN = styled.div`
-  width: 10%;
+  width: 5%;
   height: 100%;
-  font-size: 25px;
+  font-size: 28px;
   font-weight: bold;
   display: flex;
   align-items: center;

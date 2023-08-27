@@ -6,13 +6,13 @@ export default function Header() {
     <>
       <S.Header>
         <S.BillboardNavigation>
-          {/* Billboard */}
           <S.BillboardNavLi href="MusicNews">Music News</S.BillboardNavLi>
           <S.BillboardNavLi href="BillboardHot100">Hot 100</S.BillboardNavLi>
           <S.BillboardNavLi href="Billboard200">200</S.BillboardNavLi>
           <S.BillboardNavLi href="BillboardGlobal200">
             Global 200
           </S.BillboardNavLi>
+          <S.BillboardNavLi href="Artist100">Artist 100</S.BillboardNavLi>
         </S.BillboardNavigation>
         <S.MainLogo>MNS</S.MainLogo>
         <S.SearchBar>a</S.SearchBar>

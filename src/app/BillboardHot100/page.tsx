@@ -7,7 +7,7 @@ export default async function BillboardHot100() {
   return (
     <>
       <Header />
-      <Chart charts={charts} />
+      <Chart charts={charts} category={'Billboard Hot 100'} />
     </>
   );
 }

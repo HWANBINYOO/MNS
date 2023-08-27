@@ -6,7 +6,7 @@ export default async function Home() {
   const charts: BillboardItemList = await fetchChartData();
   return (
     <>
-      <Chart charts={charts} />
+      <Chart charts={charts} category={'Billboard Hot 100'} />
     </>
   );
 }

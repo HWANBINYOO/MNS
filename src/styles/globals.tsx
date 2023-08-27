@@ -102,6 +102,10 @@ const style = css`
     cursor: pointer;
     outline: none;
   }
+
+  body {
+    background-color: #f0f5f9;
+  }
 `;
 
 const GlobalStyle = () => {
