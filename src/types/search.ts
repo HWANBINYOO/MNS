@@ -23,6 +23,15 @@ export interface SearchHit {
     path: string; // ex) /Jay-park-ph-1-sik-k-big-naughty-trade-l-haon-woodie-gochild-the-purge-lyrics
     pyongs_count: number;
     relationships_index_url: string; // 관계 색인 URL
+    release_date_components: {
+      year: number;
+      month: number;
+      day: number;
+    };
+    stats: {
+      pageviews: number;
+    };
+    title: string;
     primary_artist: {
       api_path: string;
       header_image_url: string;
@@ -39,4 +48,5 @@ export interface SearchItemType {
   name: string;
   id: number;
   apiPath: string;
+  title: string;
 }

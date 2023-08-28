@@ -15,8 +15,8 @@ export default function SearchItem({
         <img
           alt="1"
           loading="lazy"
-          width="140"
-          height="140"
+          width="180"
+          height="180"
           decoding="async"
           data-nimg="1"
           src={profileImg}

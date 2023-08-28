@@ -15,8 +15,6 @@ export async function fetchSearchData(params: string) {
         Authorization: `Bearer KwSpHQnOQZw4Rtpb56GO7F1Azh_0PF471ieAnwv_LUL6OwqLIkoYY4pUjeaW0h5e`,
       },
     });
-    console.log(data);
-
     return data;
   } catch (error) {
     console.log(error);
