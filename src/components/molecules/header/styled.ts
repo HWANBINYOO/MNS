@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { isFocusProps } from 'src/types/songs';
 
 export const Header = styled.div`
   width: 100vw;
@@ -17,8 +18,10 @@ export const MainLogo = styled.div`
 `;
 
 export const SearchBar = styled.div`
+  height: 100%;
   display: flex;
-  align-content: center;
+  align-items: center;
+  cursor: pointer;
 `;
 
 export const BillboardNavigation = styled.nav`
@@ -38,5 +41,26 @@ export const BillboardNavLi = styled.a`
   :hover {
     transition: 0.2s ease-in;
     color: #52616b;
+  }
+`;
+
+export const SearchForm = styled.form`
+  /* width: ${(props: isFocusProps) => (props.isFocus ? '550px' : '250px')}; */
+  width: 380px;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  gap: 15px;
+  padding: 0 10px;
+  transition: 0.3s all ease-in;
+  input {
+    outline: none;
+    border: none;
+    font-size: 16px;
+  }
+  svg {
+    width: 25px;
   }
 `;

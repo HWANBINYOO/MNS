@@ -12,3 +12,7 @@ export interface BillboardItemList {
   date: Date;
   data: BillboardItem[];
 }
+
+export interface isFocusProps {
+  isFocus?: boolean;
+}

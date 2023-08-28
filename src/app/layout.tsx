@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/no-sync-scripts */
 'use client';
 import type { Metadata } from 'next';
+import Header from 'src/components/molecules/header';
 import GlobalStyle from '../styles/globals';
 
 // export const metadata: Metadata = {
@@ -13,9 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko">
+    <html lang="ko" suppressHydrationWarning={true}>
       <body>
+        {/* <script src="https://genius.codes"></script> */}
         <GlobalStyle />
+        <Header />
         {children}
       </body>
     </html>

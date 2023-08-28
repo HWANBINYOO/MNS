@@ -1,11 +1,18 @@
 import axios from 'axios';
-import { BillboardItem, BillboardItemList } from 'src/types/songs';
 
-export default async function Home() {
-  const charts = await fetchSearchData('a');
-  // console.log(charts);
+export default async function BillboardSearch({
+  params: { params },
+}: {
+  params: { params: string };
+}) {
+  const charts = await fetchSearchData(params);
+  console.log(charts);
 
-  return <>{/* <Chart charts={charts} category={'Billboard Hot 100'} /> */}</>;
+  return (
+    <>
+      <p>hi</p>
+    </>
+  );
 }
 
 export async function fetchSearchData(params: string) {

@@ -28,3 +28,7 @@ export const NumDesc = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+export const SearchInput = styled.input`
+  outline: none;
+`;
