@@ -23,7 +23,6 @@ export default function Header() {
         <S.MainLogo>MNS</S.MainLogo>
         <S.SearchBar>
           <S.SearchForm
-            // isFocus={isFocus}
             onSubmit={(e: FormEvent<HTMLFormElement>) => {
               e.preventDefault();
               const search = e.currentTarget.searchValue.value;

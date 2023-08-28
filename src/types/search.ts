@@ -1,4 +1,4 @@
-export interface SearchData {
+export interface SearchDataType {
   meta: {
     status: number;
   };
@@ -32,4 +32,11 @@ export interface SearchHit {
       url: string;
     };
   };
+}
+
+export interface SearchItemType {
+  profileImg: string;
+  name: string;
+  id: number;
+  apiPath: string;
 }
