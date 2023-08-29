@@ -2,16 +2,19 @@
 'use client';
 import * as S from './styled';
 import { SearchItemType } from 'src/types/search';
+import { useRouter } from 'next/navigation';
 
 export default function SearchItem({
   profileImg,
   name,
   id,
   apiPath,
+  title,
 }: SearchItemType) {
+  const router = useRouter();
   return (
     <>
-      <S.SearchItem>
+      <S.SearchItem onClick={() => router.push(`/${apiPath}`)}>
         <img
           alt="1"
           loading="lazy"
@@ -21,7 +24,10 @@ export default function SearchItem({
           data-nimg="1"
           src={profileImg}
         />
-        <S.SearchItemName>{name}</S.SearchItemName>
+        <div>
+          <S.SearchItemName>{title}</S.SearchItemName>
+          <S.SearchItArtists>{name}</S.SearchItArtists>
+        </div>
       </S.SearchItem>
     </>
   );

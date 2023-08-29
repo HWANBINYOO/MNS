@@ -12,13 +12,13 @@ export default function Header() {
     <>
       <S.Header>
         <S.BillboardNavigation>
-          <S.BillboardNavLi href="/MusicNews">Music News</S.BillboardNavLi>
-          <S.BillboardNavLi href="/BillboardHot100">Hot 100</S.BillboardNavLi>
-          <S.BillboardNavLi href="/Billboard200">200</S.BillboardNavLi>
-          <S.BillboardNavLi href="/BillboardGlobal200">
+          <S.BillboardNavLi href="/musicNews">Music News</S.BillboardNavLi>
+          <S.BillboardNavLi href="/billboardHot100">Hot 100</S.BillboardNavLi>
+          <S.BillboardNavLi href="/billboard200">200</S.BillboardNavLi>
+          <S.BillboardNavLi href="/billboardGlobal200">
             Global 200
           </S.BillboardNavLi>
-          <S.BillboardNavLi href="Artist100">Artist 100</S.BillboardNavLi>
+          <S.BillboardNavLi href="artist100">Artist 100</S.BillboardNavLi>
         </S.BillboardNavigation>
         <S.MainLogo>MNS</S.MainLogo>
         <S.SearchBar>
@@ -26,7 +26,7 @@ export default function Header() {
             onSubmit={(e: FormEvent<HTMLFormElement>) => {
               e.preventDefault();
               const search = e.currentTarget.searchValue.value;
-              router.push(`/Search/${search}`);
+              router.push(`/search/${search}`);
             }}
           >
             <svg

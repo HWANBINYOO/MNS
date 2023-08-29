@@ -16,6 +16,8 @@ export default function Search({ SearchData }: { SearchData: SearchDataType }) {
             name={i.result.artist_names}
             id={i.result.primary_artist.id}
             apiPath={i.result.primary_artist.api_path}
+            title={i.result.title}
+            date={`${i.result.release_date_components.year}.${i.result.release_date_components.month}.${i.result.release_date_components.day}`}
           />
         ))}
       </S.SearchList>

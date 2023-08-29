@@ -7,7 +7,6 @@ export const SearchItem = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  gap: 10px;
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
@@ -18,9 +17,17 @@ export const SearchItem = styled.div`
 `;
 
 export const SearchItemName = styled.div`
-  width: 140px;
+  width: 190px;
   font-size: 20px;
   font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;
+
+export const SearchItArtists = styled.div`
+  width: 140px;
+  font-size: 15px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
