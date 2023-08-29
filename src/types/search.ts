@@ -49,5 +49,4 @@ export interface SearchItemType {
   id: number;
   apiPath: string;
   title: string;
-  date: string;
 }

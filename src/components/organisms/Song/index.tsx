@@ -13,7 +13,6 @@ export default function Song({ SongData }: { SongData: SongDataType }) {
       /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/
     ) ?? '';
   const videoId = match[7];
-
   return (
     <>
       <S.SongHeader>
@@ -30,7 +29,9 @@ export default function Song({ SongData }: { SongData: SongDataType }) {
           <S.SongName>{SongData.response.song.title}</S.SongName>
           <S.SongDescBottom>
             <S.SongArtist
-              onClick={() => router.push(SongData.response.song.api_path)}
+              onClick={() =>
+                router.push(SongData.response.song.primary_artist.api_path)
+              }
             >
               {SongData.response.song.artist_names}
             </S.SongArtist>

@@ -16,7 +16,6 @@ export default function Search({ SearchData }: { SearchData: SearchDataType }) {
             id={i.result.id}
             apiPath={i.result.api_path}
             title={i.result.title}
-            date={`${i.result.release_date_components.year}.${i.result.release_date_components.month}.${i.result.release_date_components.day}`}
           />
         ))}
       </S.SearchList>
