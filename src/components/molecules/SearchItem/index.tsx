@@ -14,7 +14,7 @@ export default function SearchItem({
   const router = useRouter();
   return (
     <>
-      <S.SearchItem onClick={() => router.push(`/${apiPath}`)}>
+      <S.SearchItem onClick={() => router.push(apiPath)}>
         <img
           alt="1"
           loading="lazy"

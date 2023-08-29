@@ -1,6 +1,6 @@
 'use client';
 import * as S from './styled';
-import { BillboardItemList } from 'src/types/songs';
+import { BillboardItemList } from 'src/types/billboard';
 import ChartItem from 'src/components/molecules/ChartItem';
 import ChartHeader from 'src/components/molecules/ChartHeader';
 

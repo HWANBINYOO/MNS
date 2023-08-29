@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { isFocusProps } from 'src/types/songs';
+import { isFocusProps } from 'src/types/billboard';
 
 export const Header = styled.div`
   width: 100vw;

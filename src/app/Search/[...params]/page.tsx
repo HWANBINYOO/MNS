@@ -21,7 +21,7 @@ export async function fetchSearchData(params: string) {
       `https://api.genius.com/search?q=${params}`,
       {
         headers: {
-          Authorization: `Bearer KwSpHQnOQZw4Rtpb56GO7F1Azh_0PF471ieAnwv_LUL6OwqLIkoYY4pUjeaW0h5e`,
+          Authorization: `Bearer ZZOIodyVils4SKFDmfQ6QqI0kU3Wral2hFbk610Ijb_49gvDl9lcxd0fqG5euz3G`,
         },
       }
     );

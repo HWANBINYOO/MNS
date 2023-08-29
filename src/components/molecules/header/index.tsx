@@ -4,7 +4,6 @@ import { FormEvent, useState } from 'react';
 import * as S from './styled';
 
 export default function Header() {
-  const [searchMsg, setSearchMsg] = useState('');
   const router = useRouter();
   const [isFocus, setFocus] = useState(false);
 

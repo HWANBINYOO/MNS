@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 import * as S from './styled';
-import { BillboardItem } from 'src/types/songs';
+import { BillboardItem } from 'src/types/billboard';
 
 export default function ChartItem({
   name,

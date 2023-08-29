@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { BillboardItem, BillboardItemList } from 'src/types/songs';
+import { BillboardItem, BillboardItemList } from 'src/types/billboard';
 
 export default async function Home() {
   const charts = await fetchSearchData('a');
