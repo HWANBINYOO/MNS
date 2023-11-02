@@ -1,9 +1,9 @@
 import axios from 'axios';
 import Chart from 'src/components/organisms/home';
-import { SongDataType } from 'src/types/songs';
+import { BillboardItemList } from 'src/types/billboard';
 
 export default async function BillboardHot100() {
-  const charts: SongDataType = await fetchChartData();
+  const charts: BillboardItemList = await fetchChartData();
   return (
     <>
       <Chart charts={charts} category={'Billboard Hot 100'} />
