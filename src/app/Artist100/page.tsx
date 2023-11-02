@@ -1,6 +1,6 @@
 import axios from 'axios';
 import Chart from 'src/components/organisms/home';
-import { BillboardItemList } from 'src/types/songs';
+import { BillboardItemList } from 'src/types/billboard';
 
 export default async function Artist100() {
   const charts: BillboardItemList = await fetchChartData();

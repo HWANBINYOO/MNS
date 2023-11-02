@@ -2,6 +2,7 @@
 'use client';
 import * as S from './styled';
 import { BillboardItem } from 'src/types/billboard';
+import { useRouter } from 'next/navigation';
 
 export default function ChartItem({
   name,
@@ -12,9 +13,10 @@ export default function ChartItem({
   peak_rank,
   weeks_on_chart,
 }: BillboardItem) {
+  const router = useRouter();
   return (
     <>
-      <S.ChartItem>
+      <S.ChartItem onClick={() => router.push(`/search/${name}`)}>
         <S.ChartN>{rank}</S.ChartN>
         <img
           alt="1"

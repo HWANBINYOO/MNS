@@ -8,7 +8,6 @@ export default async function SongPage({
   params: { id: number };
 }) {
   const ArtistData = await fetchSongData(id);
-  console.log(ArtistData);
 
   return (
     <>
