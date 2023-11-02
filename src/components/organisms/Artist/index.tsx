@@ -2,18 +2,19 @@
 'use client';
 import * as S from './styled';
 import { ArtistDataType } from 'src/types/artist';
+import { useEffect, useState } from 'react';
 
 export default function Artist({ ArtistData }: { ArtistData: ArtistDataType }) {
+  const [isFollow, setIsFollow] = useState(false);
   const handleClickBtn = () => {
+    if (isFollow) return;
     let localData: string[] = getDataLocalStorage('artists');
-    console.log('i' + localData);
-
     localData.unshift(ArtistData.response.artist.id + '');
     saveDataLocalStorage(localData);
   };
 
   const getDataLocalStorage = (name: string) => {
-    let localData = localStorage.getItem(name)
+    let localData: string[] = localStorage.getItem(name)
       ? JSON.parse(localStorage.getItem(name) ?? '')
       : [];
     return localData;
@@ -23,6 +24,13 @@ export default function Artist({ ArtistData }: { ArtistData: ArtistDataType }) {
     localStorage.setItem('artists', JSON.stringify(obj));
     return;
   };
+
+  useEffect(() => {
+    const localData: string[] = JSON.parse(
+      localStorage.getItem('artists') ?? ''
+    );
+    localData.includes(ArtistData.response.artist.id + '') && setIsFollow(true);
+  }, []);
 
   return (
     <>
@@ -43,7 +51,12 @@ export default function Artist({ ArtistData }: { ArtistData: ArtistDataType }) {
         />
         <S.SongDesc>
           <S.SongName>{ArtistData.response.artist.name}</S.SongName>
-          <S.SubsrtiptBtn onClick={handleClickBtn}>팔로우</S.SubsrtiptBtn>
+          <S.SubsrtiptBtn
+            style={{ backgroundColor: isFollow ? '#1dc7ff' : '#d44339' }}
+            onClick={handleClickBtn}
+          >
+            {isFollow ? '팔로우중' : '팔로우'}
+          </S.SubsrtiptBtn>
         </S.SongDesc>
       </S.ArtistBox>
     </>
