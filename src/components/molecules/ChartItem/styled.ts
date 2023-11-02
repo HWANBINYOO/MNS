@@ -6,6 +6,7 @@ export const ChartItem = styled.div`
   align-items: center;
   justify-content: flex-start;
   background-color: white;
+  cursor: pointer;
 `;
 
 export const ChartN = styled.div`
